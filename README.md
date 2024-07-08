@@ -1,10 +1,10 @@
 
 # React Native Down Picker 
-`react-native-select-picker`: a Picker Select for React Native.
+`@mustapha-ghlissi/react-native-select-picker`: a Picker Select for React Native.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![npm](https://img.shields.io/npm/v/react-native-select-picker.svg)](https://www.npmjs.com/package/react-native-select-picker)
-[![npm](https://img.shields.io/npm/dm/react-native-select-picker.svg)](https://www.npmjs.com/package/react-native-select-picker)
+[![npm](https://img.shields.io/npm/v/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
+[![npm](https://img.shields.io/npm/dm/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
 
 ## Demo
 
