@@ -1,5 +1,5 @@
 
-# React Native Down Picker 
+# React Native Select Picker 
 `@mustapha-ghlissi/react-native-select-picker`: a Picker Select for React Native.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
