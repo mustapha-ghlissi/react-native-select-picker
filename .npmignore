@@ -1,0 +1,9 @@
+*.log
+node_modules
+.eslintrc
+.prettierrc
+yarn.lock
+screenshots
+demo
+example
+*.tgz
