@@ -4,9 +4,6 @@
     "paths": {
       "@mustapha-ghlissi/react-native-select-picker": ["./src/index"]
     },
-    "typeRoots": [
-      "./src/index.d.ts"
-    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,

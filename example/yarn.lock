@@ -1519,9 +1519,9 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mustapha-ghlissi/react-native-select-picker@../mustapha-ghlissi-react-native-select-picker-1.0.0.tgz":
-  version "1.0.0"
-  resolved "../mustapha-ghlissi-react-native-select-picker-1.0.0.tgz#f9e7ac3be71c748543c0361e2eae40c279ca2581"
+"@mustapha-ghlissi/react-native-select-picker@../mustapha-ghlissi-react-native-select-picker-1.0.2.tgz":
+  version "1.0.2"
+  resolved "../mustapha-ghlissi-react-native-select-picker-1.0.2.tgz#32ae6cd643d608651874c87c057b8f5b8eeb58df"
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
