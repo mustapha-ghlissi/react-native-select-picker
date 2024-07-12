@@ -1,7 +1,8 @@
 {
   "git": {
     "commitMessage": "chore: release ${version}",
-    "tagName": "v${version}"
+    "tagName": "v${version}",
+    "requireBranch": "main"
   },
   "npm": {
     "publish": true
@@ -13,5 +14,9 @@
     "@release-it/conventional-changelog": {
       "preset": "angular"
     }
+  },
+  "hooks": {
+    "before:init": ["npm run check"],
+    "after:bump": "npx auto-changelog -p"
   }
 }
