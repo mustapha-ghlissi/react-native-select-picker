@@ -1,6 +1,6 @@
 {
   "name": "@mustapha-ghlissi/react-native-select-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native Select Picker: dropdown select compatible with Android, IOS and Web",
   "type": "module",
   "main": "lib/commonjs/index",
