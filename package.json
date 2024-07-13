@@ -79,5 +79,8 @@
       "module",
       "typescript"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
