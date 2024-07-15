@@ -6,17 +6,16 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 
-import DropdownPicker from '@mustapha-ghlissi/react-native-select-picker';
+import DropdownPicker from './components/Dropdown';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.formGroup}>
         <Text style={styles.label}>Basic dropdown</Text>
         <DropdownPicker
-          borderColor="#000"
           items={[
             {
               label: 'BMW',
@@ -39,6 +38,7 @@ function App(): React.JSX.Element {
               value: 5,
             },
           ]}
+          onSelectChange={selected => console.log(selected)}
         />
       </View>
 
@@ -46,8 +46,6 @@ function App(): React.JSX.Element {
         <Text style={styles.label}>Custom dropdown</Text>
         <DropdownPicker
           displayItems={3}
-          outlineColor="purple"
-          borderColor="blue"
           items={[
             {
               label: 'Chevrolet',
@@ -62,28 +60,21 @@ function App(): React.JSX.Element {
               value: 3,
             },
           ]}
+          onSelectChange={selected => console.log(selected)}
         />
       </View>
-
       <View style={styles.formGroup}>
         <Text style={styles.label}>Advanced dropdown</Text>
         <DropdownPicker
+          multiple={true}
           displayItems={4}
           placeholder="Choose an advanced option"
+          borderWidth={2}
           styles={{
             dropdownToggler: {
-              height: 60,
-            },
-            dropdownList: {top: 62, borderWidth: 2},
-            inputContainer: {
-              borderWidth: 2,
-            },
-            activeItem: {
-              backgroundColor: 'red',
+              height: 55,
             },
           }}
-          outlineColor="red"
-          borderColor="#E2E2E2"
           items={[
             {
               label: 'Toyota',
@@ -110,9 +101,47 @@ function App(): React.JSX.Element {
               value: 6,
             },
           ]}
+          onSelectChange={selected => console.log(selected)}
         />
       </View>
-    </SafeAreaView>
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Inline dropdown</Text>
+        <DropdownPicker
+          multiple={true}
+          displayItems={6}
+          placeholder="Choose an advanced option"
+          borderWidth={2}
+          items={[
+            {
+              label: 'Toyota',
+              value: 1,
+            },
+            {
+              label: 'Subaru',
+              value: 2,
+            },
+            {
+              label: 'Nissan',
+              value: 3,
+            },
+            {
+              label: 'Isuzu',
+              value: 4,
+            },
+            {
+              label: 'Mazda',
+              value: 5,
+            },
+            {
+              label: 'Mitsubishi',
+              value: 6,
+            },
+          ]}
+          onSelectChange={selected => console.log(selected)}
+          inline
+        />
+      </View>
+    </ScrollView>
   );
 }
 export default App;

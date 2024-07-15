@@ -27,6 +27,12 @@ declare module '@mustapha-ghlissi/react-native-select-picker' {
     icon?: string | ReactNode;
     outlineColor?: string;
     borderColor?: string;
+    borderWidth?: number;
+    multiple?: boolean;
+    checkIcon?: string | ReactNode;
+    onSelectChange: (items: DropdownItem | DropdownItem[]) => void;
+    inline?: boolean;
+    animationDuration?: number;
   };
   
   const Dropdown: React.FC<DropdownProps>;
