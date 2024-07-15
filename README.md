@@ -6,20 +6,20 @@
 [![npm](https://img.shields.io/npm/v/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
 [![npm](https://img.shields.io/npm/dm/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
 
-## Demo
+## Screenshots
+![Simple Dropdown](./screenshots/screen-1.jpg)
+![Custom Dropdown](./screenshots/screen-2.jpg)
+![Advanced Dropdown](./screenshots/screen-3.jpg)
+![Inline Dropdown](./screenshots/screen-4.jpg)
 
-![Custom Dropdown](./screenshots/custom_dropdown.jpg)
-![Advanced Dropdown](./screenshots/advanced_dropdown.jpg)
-![All examples](./demo/dropdown_demo.gif)
+## Demo
+![Demo](./demo/demo.gif)
 
 ## Example
-
 You can check out this [<u><b>Example</b></u>](./Example/).
 
 ## Installation
-
 ##### Installing the package
-
 Use `npm` or `yarn` to install the package.
 
 ```bash
@@ -29,8 +29,8 @@ npm i @mustapha-ghlissi/react-native-select-picker
 ```bash
 yarn add @mustapha-ghlissi/react-native-select-picker
 ```
-##### Installing dependencies
 
+##### Installing dependencies
 ```bash
 npm i react-native-gesture-handler react-native-reanimated react-native-vector-icons
 ```
@@ -42,11 +42,9 @@ yarn add react-native-gesture-handler react-native-reanimated react-native-vecto
 > Note: to finish the installation, you have to finish configuring the installed dependencies [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/fundamentals/installation), [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/) and [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
 
 ## Usage
-
-``` js
+``` tsx
 import Dropdown from '@mustapha-ghlissi/react-native-select-picker';
 import type {DropdownItem} from '@mustapha-ghlissi/react-native-select-picker';
-
 
 const items: DropdownItem[] = [
     {
@@ -63,7 +61,6 @@ const items: DropdownItem[] = [
 ``` 
 
 ## Props
-
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | items | array<[`DropdownItem`](#dropdown-item)>: required | List of items |
@@ -73,10 +70,11 @@ const items: DropdownItem[] = [
 | icon | `string`, `ReactNode`: optional | Dropdown toggler icon |
 | outlineColor | `string`: optional | Dropdown outlineColor (default = '#000') |
 | borderColor | `string`: optional | Dropdown borderColor (default = '#EBEAEC') |
+| borderWidth | `number`: optional | Border width used for the dropdown (default = 1) |
+| inline | `boolean`: optional | Display th dropdown in inlined mode. ((default = false)) |
 
 ## Types
 >  ###### DropdownStyle
-
 | Parameter | Type     | Description |
 | :-------- | :------- | :------- |
 | inputContainer | [`ViewStyle`](https://reactnative.dev/docs/view-style-props): optional | InputText Container style |
