@@ -5,6 +5,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![npm](https://img.shields.io/npm/v/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
 [![npm](https://img.shields.io/npm/dm/@mustapha-ghlissi/react-native-select-picker.svg)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
+[![github](https://img.shields.io/github/actions/workflow/status/mustapha-ghlissi/react-native-select-picker/release.yml)](https://www.npmjs.com/package/@mustapha-ghlissi/react-native-select-picker)
 
 ## Screenshots
 ![Simple Dropdown](./screenshots/screen-1.jpg)
