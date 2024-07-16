@@ -19,7 +19,7 @@
     "build": "rm -rf lib && bob build && yarn copy-dts && yarn delete-dts && npm pack",
     "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
     "delete-dts": "find ./lib/commonjs -name '*.d.js*' -delete && find ./lib/module -name '*.d.js*' -delete",
-    "release": "release-it"
+    "release": "release-it --no-git.requireCleanWorkingDir"
   },
   "repository": {
     "type": "git",
