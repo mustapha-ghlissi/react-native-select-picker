@@ -1,0 +1,4 @@
+ {
+  "**/*.js": ["npm run lint", "prettier --write"],
+  "**/*.{ts,tsx}": ["npm run check", "prettier --write"]
+}
