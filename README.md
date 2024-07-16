@@ -73,6 +73,10 @@ const items: DropdownItem[] = [
 | borderColor | `string`: optional | Dropdown borderColor (default = '#EBEAEC') |
 | borderWidth | `number`: optional | Border width used for the dropdown (default = 1) |
 | inline | `boolean`: optional | Display th dropdown in inlined mode. ((default = false)) |
+| multiple | `boolean`: optional | Render multi choice dropdown. ((default = false)) |
+| checkIcon | `string`, `ReactNode`: optional | Display the icon when the option is checked. React native vector icons is used and `MaterialCommunityIcons` is used by default. |
+| animationDuration | `number`: optional | The spending duration to toggle the dropdown. ((default = 200)) |
+| onSelectChange | `callback`: required | Callback that returns the selected item/items (depending on multiple prop). |
 
 ## Types
 >  ###### DropdownStyle
@@ -118,6 +122,8 @@ const items: DropdownItem[] = [
 
 <Dropdown 
     items={items}
+    inline
+    multiple
     icon={<Icon name="chevron-down" size={26} />}
     styles={{
         inputContainer:  {
