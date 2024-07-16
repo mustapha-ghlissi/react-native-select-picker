@@ -20,7 +20,8 @@
     "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
     "delete-dts": "find ./lib/commonjs -name '*.d.js*' -delete && find ./lib/module -name '*.d.js*' -delete",
     "release": "release-it --no-git.requireCleanWorkingDir",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
