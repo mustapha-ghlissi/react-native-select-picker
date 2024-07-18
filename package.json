@@ -16,7 +16,7 @@
     "typescript": "tsc --skipLibCheck --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
     "check": "yarn typescript && yarn lint",
-    "build": "rm -rf lib && bob build && yarn copy-dts && yarn delete-dts && npm pack",
+    "build": "rm -rf lib && bob build && yarn copy-dts && yarn delete-dts",
     "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib/typescript",
     "delete-dts": "find ./lib/commonjs -name '*.d.js*' -delete && find ./lib/module -name '*.d.js*' -delete",
     "release": "release-it --no-git.requireCleanWorkingDir"
