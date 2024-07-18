@@ -1,7 +1,7 @@
 {
   "name": "@mustapha-ghlissi/react-native-select-picker",
   "version": "1.1.0",
-  "description": "React Native Select Picker: dropdown select compatible with Android, IOS and Web",
+  "description": "React Native Select Picker: Reanimated dropdown select compatible with Android, IOS and Web",
   "type": "module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -29,6 +29,10 @@
     "react-native",
     "react-native-component",
     "picker",
+    "reanimated",
+    "reanimated-picker",
+    "reanimated-select",
+    "reanimated-dropdown",
     "select",
     "select-picker",
     "dropdown",
@@ -80,7 +84,12 @@
     "targets": [
       "commonjs",
       "module",
-      "typescript"
+     [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
     ]
   },
   "publishConfig": {
