@@ -161,4 +161,4 @@ const items: DropdownItem[] = [
 
 ## Other libraries
 - [react-native-otp](https://github.com/mustapha-ghlissi/react-native-otp): One time password input for React Native.
-- [react-native-accordion](https://github.com/mustapha-ghlissi/react-native-select-picker): Reanimated collapsible sections for React Native.
+- [react-native-accordion](https://github.com/mustapha-ghlissi/react-native-accordion): Reanimated collapsible sections for React Native.
